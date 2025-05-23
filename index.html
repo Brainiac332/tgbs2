@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGBS</title>
+
+    <!-- font awsome link-->
+    <link rel="stylesheet" href="css/font-6/css/all.css" />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/l552.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- header section starts -->
+
+    <header>
+
+        <a href="#" class="logo"><img src="img/3.png" alt=""></a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about us</a>
+            <!-- <a href="#contact">Our Services</a> -->
+            <a href="#services">Contact Us</a>
+
+        </nav>
+    </header>
+    <!-- header section ends -->
+
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Need Creative Content That Stands Out?</h3>
+            <p>At The Golden Brain Services, we create eye-catching designs, videos, and social media content to help your brand shine. <span> With every touch, your creative ideas turn to Gold</span>. Want to work with us? Contact us today!
+            </p>
+            <a href="#services" class="btn">Contact us now</a>
+
+        </div>
+        <div class="image">
+            <img src="img/l552.png" alt="">
+        </div>
+
+    </section>
+    <!-- home section ends -->
+
+
+    <!-- about us section starts -->
+
+    <section class="about-us" id="about">
+
+        <h1 class="heading"> about <span>us</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="content">
+                    <img src="img/l552.png" alt="" id="logoS">
+                    <h3> The Golden Brain Services</h3>
+                    <p style="max-width: 700px; margin: auto; color: #555; font-size: 16px; line-height: 1.6;">
+                        <strong>The Golden Brain Services</strong> is a creative and digital solutions hub founded by <a href="portfolio.html">Fakhrideen</a>, a passionate IT professional and creative entrepreneur. We help brands and individuals bring
+                        their ideas to life through powerful visuals, engaging content, and strategic storytelling.
+                    </p>
+                    <ul style="list-style: none; padding: 0; max-width: 700px; margin: 20px auto; color: #555; font-size: 16px; line-height: 1.6;">
+                        <li>🎨 <strong>Graphic Design</strong> – Logos, brand identity, and visual assets</li>
+                        <li>📹 <strong>Video Editing</strong> – Eye-catching, professional content</li>
+                        <li>📱 <strong>Social Media Management</strong> – Content planning and growth</li>
+                        <li>💡 <strong>Creative Consulting</strong> – Guidance to unlock your brand’s full potential</li>
+                    </ul>
+                    <p style="max-width: 700px; margin: auto; color: #555; font-size: 16px; line-height: 1.6;">
+                        At The Golden Brain Services, we believe every idea deserves to shine.
+                    </p>
+                    <p style="font-style: italic; color: goldenrod; font-weight: bold; font-size: 18px; margin-top: 10px;">
+                        ✨ With every touch, your creative ideas turn to Gold.
+                    </p>
+                    <a href="portfolio.html" class="btn">About the founder</a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- about us section ends -->
+
+
+
+    <!-- services section starts -->
+
+    <section class="service" id="services">
+        <h1 class="heading">Contact <span>us</span></h1>
+        <div class="row">
+            <div class="image">
+                <img src="img/2.png" alt="">
+            </div>
+            <!-- <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                    <input type="email
+                    " placeholder="email
+                    ">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="number" class="num">
+                    <input type="text
+                    " placeholder="address">
+                </div>
+                <textarea placeholder="request" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="send request" class="btn">
+            </form> -->
+
+            <form id="contact-form" action="https://formspree.io/f/xjkwakar" method="POST" style="max-width: 600px; margin: 30px auto 0; display: flex; flex-direction: column; gap: 15px;">
+
+                <input type="text" name="Name" placeholder="Your Name" required style="padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
+
+                <input type="email" name="Email" placeholder="Your Email" required style="padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
+
+                <select name="Service" required style="padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
+                  <option value="" disabled selected>Select a Service</option>
+                  <option value="Graphic Design">Graphic Design</option>
+                  <option value="Video Editing">Video Editing</option>
+                  <option value="Social Media Management">Social Media Management</option>
+                  <option value="Creative Consulting">Creative Consulting</option>
+                  <option value="Other">Other</option>
+                </select>
+
+                <textarea name="Message" rows="5" placeholder="Tell us about your project..." required style="padding: 12px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+
+                <input type="submit" value="send request" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <!-- services section ends -->
+
+    <!-- Popup Modal -->
+    <div id="thank-you-popup" style="display: none; text-align: center; margin-top: 30px; background-color: #fdf8e3; padding: 20px; border: 2px solid goldenrod; border-radius: 10px; color: #444;">
+        <h3>🎉 Thank you!</h3>
+        <p>Your message has been sent successfully. We’ll get back to you soon.</p>
+    </div>
+
+    <!-- Popup Modal ends-->
+
+    <!-- footer section -->
+    <section class="footer">
+
+        <div class="social-media">
+            <!-- <a href="face" class="social-icon">
+                <i class="fab fa-facebook-f"></i> -->
+            </a>
+            <a href="https://www.instagram.com/brainiac740/" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/c/971552738118" class="social-icon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/fakhrideen-iddrisu-9107aa2a1/" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+
+        <h1 class="credit">created by <span>The Golden Brain Services</span> | &copy; all rights reserved!</h1>
+        <!-- <a href="rate.html" class="credit">rate this site</a> -->
+        <!-- <button> <a href="rate.html"class="credit">FeedBack</a></button> -->
+
+    </section>
+
+    <!-- scroller top button -->
+    <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+    <!-- feedback -->
+
+
+
+
+
+
+
+
+
+
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+</body>
+
+</html>

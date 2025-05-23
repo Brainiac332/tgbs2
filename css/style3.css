@@ -1,0 +1,97 @@
+  body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #000000, #1a1a1a);
+      color: white;
+  }
+  
+  header {
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0d0d0d;
+      border-bottom: 2px solid #d0b056;
+  }
+  
+  .logo img {
+      width: 200px;
+      height: 60px;
+      object-fit: cover;
+      position: relative;
+  }
+  
+  header h1 {
+      color: #d0b056;
+      font-size: 1.8rem;
+  }
+  
+  nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+  }
+  
+  .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+  }
+  
+  .project {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(255, 215, 0, 0.2);
+  }
+  
+  .project img {
+      width: 100%;
+      display: block;
+      height: 180px;
+      object-fit: cover;
+  }
+  
+  .project-content {
+      padding: 1rem;
+  }
+  
+  .project-content h3 {
+      color: #d0b056;
+      margin: 0 0 0.5rem;
+  }
+  
+  .project-content p {
+      color: #ccc;
+      font-size: 0.95rem;
+      line-height: 1.4;
+  }
+  
+  footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #111;
+      color: #888;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+  }
+  
+  nav a:hover {
+      color: #d0b056;
+      transition: ease;
+  }
+  
+  nav a.active {
+      color: #d0b056;
+      font-weight: bold;
+      text-decoration: none;
+  }
