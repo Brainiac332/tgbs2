@@ -1,182 +1,452 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TGBS</title>
+  <!-- Basic SEO -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Golden Brain Services | Social Media Management & Content Creation in Dubai, UAE</title>
+  <meta name="description" content="The Golden Brain Services is a Dubai-based social media management and content creation agency. We help UAE businesses grow with strategy, design, and performance marketing." />
+  <meta name="keywords" content="social media management Dubai, content creation agency UAE, digital marketing Dubai, social media marketing UAE, Instagram management Dubai, graphic design services UAE, content agency Dubai" />
 
-    <!-- font awsome link-->
-    <link rel="stylesheet" href="css/font-6/css/all.css" />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The Golden Brain Services — Social Media & Content Creation in Dubai" />
+  <meta property="og:description" content="We help UAE brands grow with social media strategy, content creation, and performance marketing." />
+  <meta property="og:url" content="https://thegoldenbrainservices.com/" />
+  <meta property="og:image" content="/assets/og-tgbs.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Golden Brain Services — Social Media & Content Creation in Dubai" />
+  <meta name="twitter:description" content="We help UAE brands grow with social media strategy, content creation, and performance marketing." />
+  <meta name="twitter:image" content="/assets/og-tgbs.jpg" />
 
-    <!-- custom css file -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/l552.png" type="image/x-icon">
+  <!-- Brand Fonts (system stack for performance) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/l552.png" type="image/x-icon">
+
+  <!-- Driver.js spotlight tour (lightweight) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js/dist/driver.min.css">
+<script src="https://cdn.jsdelivr.net/npm/driver.js/dist/driver.min.js" defer></script>
+
+<!-- Before/After slider (vanilla small lib) -->
+<script src="https://cdn.jsdelivr.net/gh/codrops/BeforeAfter/js/before-after.min.js" defer></script>
+<!-- NOTE: if that CDN not available, there's other tiny libs (before-after.js) — I used this as an example. -->
+
+<!-- Lottie (you already had it but ensure it's present) -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"The Golden Brain Services",
+    "url":"https://thegoldenbrainservices.com/",
+    "logo":"https://thegoldenbrainservices.com/assets/logo.png",
+    "sameAs":[
+      "https://www.instagram.com/tgbs25/"
+    ],
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+971552738118",
+      "contactType": "customer service",
+      "areaServed": "AE",
+      "availableLanguage": ["English", "Arabic"]
+    }]
+  }
+  </script>
+
+  <!-- Services schema -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Service",
+  "name":"Social Media Management & Content Creation",
+  "provider":{"@type":"Organization","name":"The Golden Brain Services"},
+  "areaServed":{"@type":"AdministrativeArea","name":"Dubai, UAE"},
+  "serviceType":["Social Media Management","Content Creation","Performance Marketing"]
+}
+</script>
+
+<!-- FAQ schema -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Do you manage Instagram and TikTok?", "acceptedAnswer":{"@type":"Answer","text":"Yes. We plan, create, schedule and optimize content for Instagram, TikTok, LinkedIn and more."}},
+    {"@type":"Question","name":"How fast can we start?", "acceptedAnswer":{"@type":"Answer","text":"Typically within 3–5 business days after a discovery call and onboarding."}},
+    {"@type":"Question","name":"Do you run ads?", "acceptedAnswer":{"@type":"Answer","text":"Yes. We run Meta, Google and LinkedIn campaigns with creative testing and landing pages."}}
+  ]
+}
+</script>
+
+<!-- Reviews schema (example) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"AggregateRating",
+  "itemReviewed":{"@type":"Organization","name":"The Golden Brain Services"},
+  "ratingValue":"4.8",
+  "reviewCount":"32"
+}
+</script>
 
 </head>
 
+
+
+
 <body>
-    <!-- header section starts -->
-
-    <header>
-
-        <a href="#" class="logo"><img src="img/3.png" alt=""></a>
-        <div id="menu-bar" class="fas fa-bars"></div>
-
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#about">about us</a>
-            <!-- <a href="#contact">Our Services</a> -->
-            <a href="#services">Contact Us</a>
-
-        </nav>
-    </header>
-    <!-- header section ends -->
+ 
+  <!-- ===================== GOLDEN GUIDED TOUR (SELF-CONTAINED) ===================== -->
 
 
-    <!-- home section starts -->
+<!-- ===== Welcome Overlay ===== -->
+<div id="ggtWelcome" class="ggt-overlay ggt-hidden" role="dialog" aria-modal="true" aria-labelledby="ggtWelcomeTitle">
+  <div class="ggt-welcome">
+    <div class="ggt-split" aria-label="Old vs New preview">
+      <div class="ggt-old">
+        <span class="ggt-tag">Old</span>
+        <img src="img/Old.png" alt="Old Version">
+      </div>
+      <div class="ggt-new">
+        <span class="ggt-tag ggt-tag--right">New</span>
+        <img src="img/New.png" alt="New Version">
+      </div>
 
-    <section class="home" id="home">
-
-        <div class="content">
-            <h3>Need Creative Content That Stands Out?</h3>
-            <p>At The Golden Brain Services, we create eye-catching designs, videos, and social media content to help your brand shine. <span> With every touch, your creative ideas turn to Gold</span>. Want to work with us? Contact us today!
-            </p>
-            <a href="#services" class="btn">Contact us now</a>
-
-        </div>
-        <div class="image">
-            <img src="img/l552.png" alt="">
-        </div>
-
-    </section>
-    <!-- home section ends -->
-
-
-    <!-- about us section starts -->
-
-    <section class="about-us" id="about">
-
-        <h1 class="heading"> about <span>us</span></h1>
-
-        <div class="box-container">
-            <div class="box">
-                <div class="content">
-                    <img src="img/l552.png" alt="" id="logoS">
-                    <h3> The Golden Brain Services</h3>
-                    <p style="max-width: 700px; margin: auto; color: #555; font-size: 16px; line-height: 1.6;">
-                        <strong>The Golden Brain Services</strong> is a creative and digital solutions hub founded by <a href="portfolio.html">Fakhrideen</a>, a passionate IT professional and creative entrepreneur. We help brands and individuals bring
-                        their ideas to life through powerful visuals, engaging content, and strategic storytelling.
-                    </p>
-                    <ul style="list-style: none; padding: 0; max-width: 700px; margin: 20px auto; color: #555; font-size: 16px; line-height: 1.6;">
-                        <li><strong>Graphic Design</strong> – Logos, brand identity and visual assets</li>
-                        <li><strong>Video Editing</strong> – Eye-catching, professional content</li>
-                        <li><strong>Social Media Management</strong> – Content planning and growth</li>
-                        <li><strong>Creative Consulting</strong> – Guidance to unlock your brand’s full potential</li>
-                    </ul>
-                    <p style="max-width: 700px; margin: auto; color: #555; font-size: 16px; line-height: 1.6;">
-                        At The Golden Brain Services, we believe every idea deserves to shine.
-                    </p>
-                    <p style="font-style: italic; color: goldenrod; font-weight: bold; font-size: 18px; margin-top: 10px;">
-                        ✨ With every touch, your creative ideas turn to Gold.
-                    </p>
-                    <a href="portfolio.html" class="btn">About the founder</a>
-                </div>
-            </div>
-
-        </div>
-
-
-    </section>
-
-    <!-- about us section ends -->
-
-
-
-    <!-- services section starts -->
-
-    <section class="service" id="services">
-        <h1 class="heading">Contact <span>us</span></h1>
-        <div class="row">
-            <div class="image">
-                <img src="img/2.png" alt="">
-            </div>
-           
-
-            <form id="contact-form" action="https://formspree.io/f/xjkwakar" method="POST" style="max-width: 600px; margin: 30px auto 0; display: flex; flex-direction: column; gap: 15px;">
-
-                <input type="text" name="Name" placeholder="Your Name" required style="padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
-
-                <input type="email" name="Email" placeholder="Your Email" required style="padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
-
-                <select name="Service" required style="padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
-                  <option value="" disabled selected>Select a Service</option>
-                  <option value="Graphic Design">Graphic Design</option>
-                  <option value="Video Editing">Video Editing</option>
-                  <option value="Social Media Management">Social Media Management</option>
-                  <option value="Creative Consulting">Creative Consulting</option>
-                  <option value="Other">Other</option>
-                </select>
-
-                <textarea name="Message" rows="5" placeholder="Tell us about your project..." required style="padding: 12px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
-
-                <input type="submit" value="send request" class="btn">
-            </form>
-        </div>
-    </section>
-
-    <!-- services section ends -->
-
-    <!-- Popup Modal -->
-    <div id="thank-you-popup" style="display: none; text-align: center; margin-top: 30px; background-color: #fdf8e3; padding: 20px; border: 2px solid goldenrod; border-radius: 10px; color: #444;">
-        <h3>🎉 Thank you!</h3>
-        <p>Your message has been sent successfully. We’ll get back to you soon.</p>
+      <!-- Golden swipe divider -->
+      <div class="ggt-divider"></div>
     </div>
 
-    <!-- Popup Modal ends-->
+    <div class="ggt-title">
+      <h2 id="ggtWelcomeTitle">Welcome to The Golden Brain</h2>
+      <p class="ggt-sub">Experience Our New Design. Take a quick 30-second tour and see what’s new! 🚀</p>
+      <div class="ggt-controls">
+        <button id="ggtWow" class="ggt-btn ggt-btn--wow">Take the Tour</button>
+        <button id="ggtSkipWelcome" class="ggt-btn ggt-btn--skip">Skip</button>
+      </div>
+      <div class="ggt-hint" aria-hidden="true">⇄ Swipe to compare</div>
+    </div>
+  </div>
+</div>
 
-    <!-- footer section -->
-    <section class="footer">
 
-        <div class="social-media">
-            <!-- <a href="face" class="social-icon">
-                <i class="fab fa-facebook-f"></i> -->
-            </a>
-            <a href="https://www.instagram.com/tgbs25/" class="social-icon">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://wa.me/c/971552738118" class="social-icon">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/fakhrideen-iddrisu-9107aa2a1/" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
+
+<!-- ===== Tour Overlay ===== -->
+<div id="ggtTour" class="ggt-overlay ggt-hidden" aria-hidden="true">
+  <div id="ggtSpot" class="ggt-spot" aria-hidden="true"></div>
+  <div id="ggtTip" class="ggt-tip" role="dialog" aria-live="polite" aria-label="Guide tooltip">
+    <h3 id="ggtTitle"></h3>
+    <p id="ggtText"></p>
+    <div class="ggt-progress" id="ggtDots"></div>
+    <div class="ggt-acts" id="ggtActs"></div>
+  </div>
+</div>
+
+<!-- ===== Congrats Overlay ===== -->
+<div id="ggtDone" class="ggt-overlay ggt-hidden" role="dialog" aria-modal="true" aria-label="Tour complete">
+  <div class="ggt-card">
+    <h2>🎉 Congrats on the tour!</h2>
+    <p class="ggt-p">You’re all set to explore <strong>The Golden Brain</strong>. May your growth be golden</p>
+    <button class="ggt-primary" id="ggtExplore">Start Exploring </button>
+  </div>
+</div>
+
+<!-- ===== Replay Button ===== -->
+<button id="ggtReplay" class="ggt-replay" title="Replay Guided Tour" aria-label="Replay Guided Tour"><i class="bi bi-info-circle-fill" ></i></button>
+
+<!-- ===================== /GOLDEN GUIDED TOUR ===================== -->
+
+  <!-- Header / Nav -->
+<header>
+  <div class="wrap nav" aria-label="Primary">
+    <a href="#home" class="logo"><img src="img/Logo.png" alt="The Golden Brain Services Logo"></a>
+
+    <!-- Desktop navigation -->
+    <nav class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+      <a class="cta" href="#contact">Get Free Strategy Call</a>
+    </nav>
+
+    <!-- Burger button (only visible on small screens via CSS) -->
+    <button class="burger" id="burger" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile navigation panel -->
+  <div class="mobile-panel" id="mobile-menu" hidden>
+    <div class="mobile-card">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px">
+        <div class="logo" style="font-size:18px">
+          <div class="logo-mark"></div><span>TGBS</span>
         </div>
+         <button id="closeMenu" class="btn btn-secondary" aria-label="Close menu">Close</button> 
+      </div>
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+      <a class="cta" href="#contact">Get Free Strategy Call</a>
+      <div class="muted" style="margin-top:auto">© The Golden Brain Services</div>
+    </div>
+  </div>
+</header>
 
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Dubai • Social Media & Content</div>
+        <h1>Grow faster with a <span style="color:var(--gold)">content engine</span> that sells.</h1>
+        <p class="lead">We help UAE brands with <strong>social media management</strong>, <strong>content creation</strong>, and <strong>performance marketing</strong> that turns attention into revenue.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#contact">Book Free Strategy Call</a>
+          <a class="btn btn-secondary" href="#work">See Case Studies</a>
+        </div>
+        <div class="metrics" aria-label="Key results">
+          <div class="kpi"><h3>120+ </h3><p>Campaigns shipped</p></div>
+          <div class="kpi"><h3>4.8★</h3><p>Average client rating</p></div>
+          <div class="kpi"><h3>3x</h3><p>Avg. engagement uplift</p></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="device">
+          <div class="device-inner">
+            <div class="device-bar"></div>
+            <div class="device-feed">
+              <div class="card"><img src="img/6.png" alt=""></div>
+              <div class="card"><img src="img/7.png" alt=""></div>
+              <div class="card"><img src="img/6.png" alt=""></div>
+              <div class="card"><img src="img/5.png" alt=""></div>
+              <div class="card"><img src="img/8.png" alt=""></div>
+              <div class="card"><img src="img/5.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="blob"></div>
+        <div class="blob-sparks"></div>
+      </div>
+    </div>
+  </section>
 
-        <h1 class="credit">created by <span>The Golden Brain Services</span> | &copy; all rights reserved!</h1>
-        <!-- <a href="rate.html" class="credit">rate this site</a> -->
-        <!-- <button> <a href="rate.html"class="credit">FeedBack</a></button> -->
+  <!-- Services -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Services built for <span style="color:var(--gold)">UAE growth</span></h2>
+        <p class="muted">Strategy • Creation • Distribution • Optimization</p>
+      </div>
+      <div class="services" aria-label="Our services">
+        <article class="service" aria-labelledby="svc1">
+          <div class="tag"> Social Media Management Dubai</div>
+          <h3 id="svc1">Social Media Management</h3>
+          <p>Full-funnel social media strategy, content calendars, community management, and reporting across Instagram, TikTok, LinkedIn, and more.</p>
+          <div class="tags">
+            <span class="tag">Instagram & TikTok</span>
+            <span class="tag">Content Calendar</span>
+            <span class="tag">Community</span>
+          </div>
+        </article>
+        <article class="service" aria-labelledby="svc2">
+          <div class="tag"> Content Creation Agency UAE</div>
+          <h3 id="svc2">Content Creation</h3>
+          <p>High-converting short videos, carousels, brand photography, and copywriting designed to attract, engage, and convert your ideal clients.</p>
+          <div class="tags">
+            <span class="tag">UGC & Reels</span>
+            <span class="tag">Carousels</span>
+            <span class="tag">Brand Copy</span>
+          </div>
+        </article>
+        <article class="service" aria-labelledby="svc3">
+          <div class="tag"> Digital Marketing Dubai</div>
+          <h3 id="svc3">Performance Marketing</h3>
+          <p>Targeted ads on Meta, Google, and LinkedIn with creative testing and landing pages to maximize ROAS and qualified leads.</p>
+          <div class="tags">
+            <span class="tag">Meta & Google Ads</span>
+            <span class="tag">Landing Pages</span>
+            <span class="tag">A/B Testing</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    </section>
+  <!-- Portfolio / Case Studies -->
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Recent <span style="color:var(--gold)">work</span> & case studies</h2>
+        <p class="muted">A snapshot of campaigns and visuals we delivered.</p>
+      </div>
+      <div class="grid" aria-label="Portfolio">
+        <a class="tile" href="https://www.instagram.com/biour_pack/" aria-label="Beauty brand social growth case study">
+          <img loading="lazy" src="img/products.png" alt="Grid of stylish posts for a beauty brand" />
+          <div class="cap">Biodegradable Packaging Products Company: +210% IG engagement</div>
+        </a>
+        <a class="tile" href="https://www.instagram.com/jkarchitecturedesignbuild/" aria-label="Real estate content engine case study">
+          <img loading="lazy" src="img/RealEstate.png" alt="Modern real-estate visuals" />
+          <div class="cap">Real estate: Multiple projects within 1 month</div>
+        </a>
+        <a class="tile" href="#work" aria-label="Restaurant UGC campaign case study">
+          <img loading="lazy" src="img/Ffd.png" alt="Lifestyle food content" />
+          <div class="cap">F&B: 1.7x CTR with UGC</div>
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <!-- scroller top button -->
-    <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What our clients <span style="color:var(--gold)">say</span></h2>
+        <p class="muted">Trusted by founders and marketing teams across the UAE and beyond.</p>
+      </div>
+      <div class="testis" aria-label="Testimonials">
+        <article class="quote">
+          <p>“TGBS transformed our Instagram. Content is clean, consistent, and drives real inquiries.”</p>
+          <div class="person">
+           <div class="avatar" aria-hidden="true"><img src="img/Biour.png" alt="" style="border-radius: 999px;"></div>
+            <div>
+              <div><strong>Biour Pack.</strong></div>
+              <div class="muted">Biodegradable Packaging Company</div>
+            </div>
+          </div>
+        </article>
+        <article class="quote">
+          <p>"Strategic vision meets exceptional design. We secured multiple projects within the first month."</p>
+          <div class="person">
+            <div class="avatar" aria-hidden="true"><img src="img/jk.png" alt="" style="border-radius: 999px;"></div>
+            <div>
+              <div><strong>JK Homes.</strong></div>
+              <div class="muted">Real Estate</div>
+            </div>
+          </div>
+        </article>
+        <article class="quote">
+          <p>“Professional team with fast turnaround. Highly recommended.”</p>
+          <div class="person">
+            <div class="avatar" aria-hidden="true"></div>
+            <div>
+              <div><strong>Anisha P.</strong></div>
+              <div class="muted">F&B, JLT</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <!-- feedback -->
+  <!-- CTA + Form -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="cta-band">
+        <div>
+          <h2>Book your <span style="color:var(--gold)">free strategy call</span></h2>
+          <p class="muted">Tell us about your goals. We’ll share a quick plan for growth across social, content, and ads.</p>
+          <ul class="muted">
+            <li>✔ Response in under 24h</li>
+            <li>✔ Tailored growth roadmap</li>
+            <li>✔ No obligation</li>
+          </ul>
+        
+        </div>
+        <form id="leadForm" class="form"  method="POST" aria-label="Lead capture form">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div class="field">
+            <label for="phone">Phone / WhatsApp</label>
+            <input id="phone" name="phone" type="tel" placeholder="+971 ..." />
+          </div>
+          <div class="field">
+            <label for="message">Project goals</label>
+            <textarea id="message" name="message" placeholder="Tell us about your brand and what you want to achieve"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Request Strategy Call</button>
+          <div class="disclaimer">By submitting, you agree to our terms. We’ll never spam.</div>
+        </form>
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer>
+    <div class="wrap footgrid">
+      <div>
+      <a href="#home" class="logo"><img src="img/Logo.png" alt=""></a>
+        <p class="muted">Dubai-based social media management & content creation agency serving clients across the UAE.</p>
+        <div class="copy">© <span id="year"></span> The Golden Brain Services. All rights reserved.</div>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:fakhrideen332@gmail.com">fakhrideen332@gmail.com</a><br/>
+           Phone/WhatsApp: <a href="tel:+971552738118">+971 552738118</a></p>
+        <p class="muted">Business Bay, Dubai, UAE</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p><a href="#services">Services</a><br/>
+           <a href="#work">Work</a><br/>
+           <a href="#testimonials">Testimonials</a><br/>
+           <a href="#contact">Contact</a></p>
+      </div>
+    </div>
+  </footer>
 
+<!-- Floating Social Buttons -->
+<div class="floating">
+  <!-- WhatsApp -->
+  <a href="https://wa.me/971552738118?text=Hi%20TGBS%2C%20I%27d%20love%20a%20free%20strategy%20call" 
+     class="float-btn" 
+     title="Chat on WhatsApp" 
+     aria-label="Chat on WhatsApp" target="_blank"
+     data-tooltip="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
+  <!-- Instagram -->
+  <a href="https://instagram.com/tgbs25" 
+     class="float-btn" 
+     title="Follow us on Instagram" 
+     aria-label="Instagram" target="_blank"
+     data-tooltip="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
 
+  <!-- LinkedIn -->
+  <a href="https://linkedin.com/company/the-golden-brain-services" 
+     class="float-btn" 
+     title="Connect on LinkedIn" 
+     aria-label="LinkedIn" target="_blank"
+     data-tooltip="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+</div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- Toast -->
+  <div class="toast" role="status" aria-live="polite" id="toast">Thanks! We received your request — we’ll WhatsApp you shortly.</div>
 
+  <script src="script.js"></script>
 
-
-
-
-    <!-- custom js file link -->
-    <script src="script.js"></script>
 </body>
-
 </html>
