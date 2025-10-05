@@ -404,13 +404,71 @@ header {
     @media (max-width: 900px){.grid{grid-template-columns:1fr}}
 
     /* Testimonials */
-    .testis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .quote{padding:18px;border-radius:16px;background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.06)}
-    .quote p{margin:0 0 12px}
-    .person{display:flex;align-items:center;gap:10px}
-    .avatar{width:40px;height:40px;border-radius:999px;background:linear-gradient(145deg, #2a2f37, #171a20);border:1px solid rgba(255,255,255,.08)}
+    /* Testimonials */
+.testis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  align-items: stretch; /* ensures all cards align evenly in height */
+}
 
-    @media (max-width: 900px){.testis{grid-template-columns:1fr}}
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pushes content and person info apart */
+  padding: 18px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  min-height: 220px; /* makes all cards visually equal */
+  box-sizing: border-box;
+}
+
+.quote p {
+  margin: 0 0 12px;
+  line-height: 1.5;
+  color: #fff;
+  flex-grow: 1; /* fills available space for alignment */
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto; /* ensures consistent bottom alignment */
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: linear-gradient(145deg, #2a2f37, #171a20);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
+}
+
+.person div {
+  display: flex;
+  flex-direction: column;
+}
+
+.person div b {
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.person div span {
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .testis {
+    grid-template-columns: 1fr;
+  }
+}
+
 
     /* CTA band */
     .cta-band{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));padding:24px;border-radius:16px;border:1px solid rgba(255,255,255,.06)}
@@ -820,4 +878,5 @@ header {
     .ggt-spot,.ggt-tip{transition:none}
   }
  
+
    
