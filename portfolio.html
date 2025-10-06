@@ -1,260 +1,490 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+ <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style1.css">
-    <link rel="stylesheet" href="css/font-6/css/all.css">
+    <!-- SEO Meta Tags -->
+    <title>Fakhrideen | Creative Entrepreneur & Digital Brand Strategist</title>
+    <meta name="description" content="Transforming bold ideas into powerful visuals & strategies. Explore the portfolio of Fakhrideen – Creative Entrepreneur at The Golden Brain Services.">
+    <meta name="keywords" content="Fakhrideen, Creative Entrepreneur, Graphic Design, Social Media Management, Content Creation, Digital Branding, Portfolio, The Golden Brain Services">
+    <meta name="author" content="Fakhrideen | The Golden Brain Services">
 
-    <link rel="shortcut icon" href="GD/P.png" type="image/x-icon">
+    <!-- Open Graph / Social Media Meta -->
+    <meta property="og:title" content="Fakhrideen | Creative Entrepreneur & Digital Brand Strategist">
+    <meta property="og:description" content="Transforming bold ideas into powerful visuals & strategies. Explore the portfolio of Fakhrideen – Creative Entrepreneur at The Golden Brain Services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourportfolio.com/">
+    <meta property="og:image" content="https://yourportfolio.com/image/c3.png">
 
-    <title>Portfolio</title>
+    <!-- Twitter Card Meta -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fakhrideen | Creative Entrepreneur & Digital Brand Strategist">
+    <meta name="twitter:description" content="Transforming bold ideas into powerful visuals & strategies. Explore the portfolio of Fakhrideen – Creative Entrepreneur at The Golden Brain Services.">
+    <meta name="twitter:image" content="https://yourportfolio.com/image/c3.png">
+
+  <link rel="shortcut icon" href="GD/P.png" type="image/x-icon">
+  <!-- Local Font Awesome (keeps your existing setup) -->
+  <link rel="stylesheet" href="css/font-6/css/all.css" />
+  <link rel="stylesheet" href="css/style1.css">
+
+ 
 </head>
-
 <body>
 
-    <!-- header design starts-->
-    <header>
-        <a href="#home" class="logo"><img src="image/c3.png" alt=""></a>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home"><img src="image/c4.png" alt="TGBS logo"></a>
 
-        <ul class="navlist">
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">about me</a></li>
-            <li><a href="#services">services</a></li>
-            <li><a href="#portfolio">portfolio</a></li>
-            <!-- <li><a href="#contact">contact me</a></li> -->
+      <nav class="main-nav" aria-label="Main">
+        <ul class="navlist" id="navlist">
+          <!-- <li><a href="#home">Home</a></li> -->
+          <li><a href="index.html" style="color:#b8903a;">TGBS</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+      </nav>
 
-        <div class="fas fa-bars" id="menu-icon"></div>
-    </header>
-    <!-- header design ends-->
+      <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="navlist" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
 
-    <!-- home section design starts-->
-    <section class="home" id="home">
-        <div class="home-text">
-            <div class="slide">
-                <span class="one">Welcome!</span>
-                <span class="two">I'm</span>
-            </div>
-            <h1>fakhrideen</h1>
-            <!-- <h3>A Creative <span>Entrepreneur.</span></h3> -->
-            <p class="text-white max-w-xl leading-relaxed text-lg">a creative mind obsessed with turning bold ideas into unforgettable visuals. From concept to content, I bring imagination to life through design, storytelling, and digital strategy. Dive into my world and let’s build something extraordinary
-                together.
-            </p>
-            <div class="button">
-                <a href="Index.html" class="btn">TGBS</a>
-                <a href="#portfolio" class="btn2"><span><i class="fas fa-play"></i></span>watch my work</a>
-            </div>
+  <!-- HERO -->
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-inner container">
+        <div class="hero-copy reveal">
+          <small class="kicker">Creative Ideas starts here</small>
+          <h1 class="hero-title">Fakhrideen | Creative Entrepreneur & Digital Brand Strategist</h1>
+          <p class="hero-lead">I help brands tell better stories through content creation, social media management, and high-impact graphic design. Clean, conversion-focused systems that scale.</p>
+          <div class="hero-ctas">
+            <a href="#portfolio" class="btn ghost">View Work</a>
+            <a href="#contact" class="btn primary">Get in Touch</a>
+          </div>
         </div>
+
+        <div class="hero-device reveal">
+          <div class="device-frame" role="img" aria-label="Portfolio showcase">
+            <video src="GD/vid.mp4" alt="work showcase"  loop autoplay muted></video>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- home section design ends-->
     <!-- about section design starts-->
 
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="image/user.JPG" alt="">
-        </div>
-
-        <div class="about-text">
-            <h2>about <span>me</span></h2>
-            <h4>creative Entrepreneur!</h4>
-            <p>Hey, I’m Fakhrideen, a creative entrepreneur fueled by vision, driven by passion, and wired to turn imagination into reality. From the moment I could hold a pencil, or dream in color, creativity has been my second language. I don’t just see
+    <section class="about-slim" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <!-- Left Content -->
+      <div class="about-left">
+        <h2>About <span>Me</span></h2>
+        <p class="muted">
+          Hey, I’m Fakhrideen, a creative entrepreneur fueled by vision, driven by passion, and wired to turn imagination into reality. From the moment I could hold a pencil, or dream in color, creativity has been my second language. I don’t just see
                 the world for what it is; I see what it could be. Shapes become stories. Ideas become visuals. Inspiration strikes in the everyday, and when it does, I chase it with everything I’ve got. I specialize in content creation, graphic design,
                 and social media storytelling, but what I truly offer is the ability to craft experiences that connect, captivate, and leave a mark. Whether it’s building a bold visual identity, launching a scroll-stopping campaign, or bringing a spark
-                of inspiration to life, I approach every project with curiosity, heart, and a relentless drive for excellence. This isn’t just my work. It’s my playground. My passion. My purpose. Welcome to my world, where creativity knows no limits.</p>
-            <!-- <a href="https://www.linkedin.com/in/fakhrideen-iddrisu-9107aa2a1/" class="btn">Linked<i class="fab fa-linkedin-in"></i></a> -->
+                of inspiration to life, I approach every project with curiosity, heart, and a relentless drive for excellence. This isn’t just my work. It’s my playground. My passion. My purpose. Welcome to my world, where creativity knows no limits.
+        </p>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="num">5+</div>
+            <div class="label">Years Experience</div>
+          </div>
+          <div class="stat">
+            <div class="num">100+</div>
+            <div class="label">Projects Completed</div>
+          </div>
+          <div class="stat">
+            <div class="num">50+</div>
+            <div class="label">Happy Clients</div>
+          </div>
+          <div class="stat">
+            <div class="num">10+</div>
+            <div class="label">Creative Services</div>
+          </div>
         </div>
-    </section>
+      </div>
+
+      <!-- Right Image -->
+      <div class="about-right">
+        <img src="image/user.JPG" alt="Fakhrideen - The Golden Brain">
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- about section design ends-->
-    <!-- service section design starts-->
 
-    <section class="services" id="services">
-        <div class="main-text">
-            <p>what i am expert in</p>
-            <h2><span>my</span> services</h2>
-        </div>
+    <!-- Services (case studies grid) -->
+    <section id="services" class="container reveal">
+      <div class="section-head">
+        <h3><span>My</span> Services</h3>
+        <p class="muted">Built to bring your creative ideas to life.</p>
+      </div>
 
-        <div class="services-content">
-            <!-- <div class="box">
-                <div class="s-icons">
-                    <i class="fas fa-code"></i>
-                </div>
-                <h3>UI/ UX Design</h3>
-                <p>Want to turn visitors into loyal users? I design intuitive, visually stunning user interfaces that not only look great but also deliver seamless user experiences. Whether it's a website, mobile app, or SaaS platform. I craft user-centered
-                    designs that enhance engagement, drive conversions, and bring your digital vision to life. Let’s build something that users will love to explore.</p>
-                <a href="#contact" class="read">Contact now</a>
-            </div> -->
+      <div class="works-grid" id="works-grid" aria-live="polite">
+        <!-- Work item (repeat) -->
+        <article class="work-card" data-title="Graphic Design" data-img="GD/2.png" data-desc="Want visuals that make your brand unforgettable? I create striking, on-brand graphic designs that capture attention and communicate your message with impact. From social media creatives and marketing materials to logos and brand identities. I bring your ideas to life through bold, purposeful design. Let’s make your brand stand out with visuals that speak volumes.">
+          <div class="work-badge">GD</div>
+          <img src="GD/2.png" alt="Visuals that sell" style="display:block;object-fit:cover;width:100%;height:100%">
+          <div class="work-meta">
+            <h4>Visuals that sell</h4>
+            <p class="muted">Graphic Design</p>
+          </div>
+        </article>
 
-            <div class="box">
-                <div class="s-icons">
-                    <i class="fas fa-edit"></i>
-                </div>
-                <h3>Graphic Design</h3>
-                <p>Want visuals that make your brand unforgettable? I create striking, on-brand graphic designs that capture attention and communicate your message with impact. From social media creatives and marketing materials to logos and brand identities.
-                    I bring your ideas to life through bold, purposeful design. Let’s make your brand stand out with visuals that speak volumes.
-                </p>
-                <!-- <a href="#" class="read">read more</a> -->
-            </div>
+        <article class="work-card" data-title="Social Media Management" data-img="gd/3.png" data-desc="Want to grow your brand with strategic, engaging content? I help brands thrive on social media through data-driven strategies, eye-catching visuals, and compelling storytelling. From content creation and scheduling to community management and analytics, I manage it all to boost your online presence and turn followers into loyal customers. Let’s turn your social platforms into powerful marketing tools.">
+          <div class="work-badge">SMM</div>
+          <img src="gd/3.png" alt="Social Growth" style="display:block;object-fit:cover;width:100%;height:100%">
+          <div class="work-meta">
+            <h4>Social Growth</h4>
+            <p class="muted">Social Media Management</p>
+          </div>
+        </article>
 
-            <div class="box">
-                <div class="s-icons">
-                    <!-- <i class="fas fa-"></i> -->
-                    <i><img src="image/s.png" alt=""></i>
+        <article class="work-card" data-title="Content Creation" data-img="gd/4.png" data-desc="Looking to stand out with scroll-stopping content? I specialize in creating high-quality, engaging content that captures attention and elevates your brand across all platforms. From dynamic short-form videos to polished YouTube content and campaign visuals. I turn ideas into compelling content that connects with your audience and drives results. Let’s bring your vision to life, one powerful post at a time.">
+          <div class="work-badge">CC</div>
+          <img src="gd/4.png" alt="Sawad I" style="display:block;object-fit:cover;width:100%;height:100%">
+          <div class="work-meta">
+            <h4>Scroll-stopping content</h4>
+            <p class="muted">Content Creation</p>
+          </div>
+        </article>
+      </div>
 
-                </div>
-                <h3>Social Media Management</h3>
-                <p>Want to grow your brand with strategic, engaging content? I help brands thrive on social media through data-driven strategies, eye-catching visuals, and compelling storytelling. From content creation and scheduling to community management
-                    and analytics—I manage it all to boost your online presence and turn followers into loyal customers. Let’s turn your social platforms into powerful marketing tools.</p>
-                <!-- <a href="#" class="read">read more</a> -->
-            </div>
-
-            <div class="box">
-                <div class="s-icons">
-                    <!-- <i class="fas fa-"></i> -->
-                    <i><img src="image/f.png" alt=""></i>
-
-                </div>
-                <h3>Content Creation</h3>
-                <p>Looking to stand out with scroll-stopping content? I specialize in creating high-quality, engaging content that captures attention and elevates your brand across all platforms. From dynamic short-form videos to polished YouTube content
-                    and campaign visuals. I turn ideas into compelling content that connects with your audience and drives results. Let’s bring your vision to life, one powerful post at a time.</p>
-                <!-- <a href="#" class="read">read more</a> -->
-            </div>
-
-        </div>
-
+      <div class="cta-strip" style="margin-top:18px">
+        <div class="muted">Want to discover how your brand can grow with visual systems and content?</div>
+        <a class="btn ghost" href="https://wa.me/971552738118?text=Hi%20TGBS%2C%20I%27m%20interested%20in%20your%20services">Message on WhatsApp</a>
+      </div>
     </section>
 
+    <!-- Works -->
+<section id="portfolio" class="container reveal" style="padding-top:28px">
+  <div class="section-head">
+    <h3><span>My</span> Works</h3>
+    <p class="muted">Explore the creative results behind The Golden Brain Services.</p>
+  </div>
 
-    <!-- service section design ends-->
+  <!-- Video Hero -->
+  <div class="works-hero">
+  <video class="works-video" src="GD/Vid2.mp4" autoplay muted loop playsinline></video>
+  <button id="revealWorksBtn" class="reveal-works-btn">
+    <i class="fas fa-arrow-down"></i>
+  </button>
+</div>
+  <p class="text-center muted" style="margin-top:10px;font-size:14px">Click the arrow and scroll to explore my works</p>
 
-    <!-- portfolio section design starts-->
+  <!-- Hidden Works Section -->
+  <div id="worksSection" class="works-hidden">
+    <!-- Graphic Design -->
+    <div class="work-category">
+      <h4>Graphic Design</h4>
+      <div class="work-grid">
+        <div class="work-card" data-title="Creative Poster Design" data-desc="High-impact posters designed for campaigns and launches.">
+          <img src="GD/Pd.png" alt="Poster Design">
+          <div class="work-meta"><h5>Poster Design</h5><p>Visual storytelling through layouts and bold color systems.</p></div>
+        </div>
+        <div class="work-card" data-title="Logo Concepts" data-desc="Clean, memorable logos that reflect brand identity.">
+          <img src="GD/ld.png" alt="Logo Design">
+          <div class="work-meta"><h5>Logo Concepts</h5><p>Unique marks that communicate clarity and style.</p></div>
+        </div>
+        <div class="work-card" data-title="Product Mockups" data-desc="Realistic mockups that elevate brand presentations.">
+          <img src="GD/md.png" alt="Mockup Design">
+          <div class="work-meta"><h5>Product Mockups</h5><p>Showcasing creativity and professional execution.</p></div>
+        </div>
+      </div>
+    </div>
 
-    <section class="portfolio" id="portfolio">
-        <div class="main-text">
-            <p>portfolio</p>
-            <h2><span>My</span> projects</h2>
+    <!-- Social Growth -->
+    <div class="work-category">
+      <h4>Social Growth</h4>
+      <div class="work-grid">
+        <a href="https://www.instagram.com/biour_pack/"><div class="work-card">
+          <img src="GD/Bd.png" alt="Instagram Campaign">
+          <div class="work-meta"><h5>Biour Pack</h5><p>Connecting brand values with business goals.</p></div>
+        </div>
+        </a>
+        <a href="https://www.instagram.com/jkarchitecturedesignbuild/">
+        <div class="work-card">
+          <img src="GD/jl.jpg" alt="LinkedIn Strategy">
+          <div class="work-meta"><h5>JK Homes</h5><p>Consistency that drives recognition and growth.</p></div>
+        </div>
+        </a>
+        <a href="https://www.instagram.com/ajonlinetrading_gh/">
+        <div class="work-card">
+          <img src="GD/AJ.png" alt="Templates">
+          <div class="work-meta"><h5>AJ Online Trading</h5><p>Curated visuals for audience-driven impact.</p></div>
+        </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Content Creation -->
+    <div class="work-category">
+      <h4>Content Creation</h4>
+      <div class="work-grid">
+        <a href="https://youtu.be/gzGhf3U6cvM?si=svjyWkWAA23kSncE">
+        <div class="work-card">
+          <img src="GD/Yd.png" alt="Videos about Cars">
+          <div class="work-meta"><h5>Video content about cars</h5><p>Catchy edits with storytelling that sells.</p></div>
+        </div>
+        </a>
+        <a href="https://www.instagram.com/p/DGZ_shDT3Az/">
+        <div class="work-card">
+          <img src="GD/Ai.png" alt="AI genrated videos">
+          <div class="work-meta"><h5>AI genrated videos</h5><p>Concept-driven visuals that boost retention.</p></div>
+        </div>
+        </a>
+        <a href="https://www.instagram.com/p/DKgqTNaqGe9/">
+        <div class="work-card">
+          <img src="GD/Va.png" alt="Video Ads">
+          <div class="work-meta"><h5>Video Ads</h5><p>Persuasive messaging with emotional depth.</p></div>
+        </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
+    <!-- CONTACT -->
+    <section id="contact" class="contact-cta container reveal" style="padding-top:36px">
+      <div class="contact-inner">
+        <div>
+          <h3>Got a vision? Let’s bring it to life.</h3>
+          <p class="muted">I help founders and creators launch visual identities and content that convert.</p>
         </div>
 
-        <div class="portfolio-content">
-            <!-- <div class="row">
-                <img src="gd/UI.png" alt="">
-                <div class="layer">
-                    <h5>UI/UX design</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, molestiae.</p> 
-                    <a href="ui-ux.html"> <i class="fas fa-external-link"></i></a>
-                </div>
-            </div> -->
-
-
-            <div class="row">
-                <img src="GD/Graphic designer.png" alt="">
-                <div class="layer">
-                    <h5>Graphic design</h5>
-                    <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, molestiae.</p> -->
-                    <a href="graphic-design.html"> <i class="fas fa-external-link"></i></a>
-                </div>
-            </div>
-
-            <div class="row">
-                <img src="gd/c3.png" alt="">
-                <div class="layer">
-                    <h5>Social Media Management</h5>
-                    <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, molestiae.</p> -->
-                    <a href="social-media.html"> <i class="fas fa-external-link"></i></a>
-                </div>
-            </div>
-
-            <div class="row">
-                <img src="gd/c1.png" alt="">
-                <div class="layer">
-                    <h5>Content Creation</h5>
-                    <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, molestiae.</p> -->
-                    <a href="content-creation.html"> <i class="fas fa-external-link"></i></a>
-                </div>
-            </div>
-
-
-        </div>
-
+        <!-- Safe contact form: uses mailto for simplicity and keeps credentials out of code -->
+        <form id="contact-form" class="contact-form" aria-label="Contact form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Send message</button>
+            <a class="btn ghost" href="https://wa.me/971552738118?text=Hi%20TGBS%2C%20I%27d%20like%20to%20get%20started" target="_blank">Message on WhatsApp</a>
+          </div>
+        </form>
+      </div>
     </section>
+  </main>
 
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <strong>The Golden Brain Services</strong></div>
+      <div class="social-media">
+        <a class="social-icon" href="https://www.instagram.com/tgbs25/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a class="social-icon" href="https://wa.me/971552738118" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a class="social-icon" href="https://www.linkedin.com/in/fakhrideen-iddrisu-9107aa2a1/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
 
-   <section class="end">
+  <!-- SCROLL TOP -->
+  <a id="scroll-top" class="scroll-top" href="#home" aria-label="Back to top">▲</a>
 
-
-        <div class="social-media">
-            </a>
-            <a href="https://www.instagram.com/tgbs25/" class="social-icon">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://wa.me/971552738118?text=Hi%20TGBS%2C%20I%27d%20like%20to%20get%20started%20with%20your%20Content%20Creation%2C%20Social%20Media%20Management%20and%20Graphic%20Designing%20services" class="social-icon">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/fakhrideen-iddrisu-9107aa2a1/" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
+  <!-- PROJECT DETAIL MODAL (used by JS) -->
+  <div id="project-modal" class="modal-backdrop" role="dialog" aria-hidden="true">
+    <div class="modal" role="document" aria-labelledby="modal-title">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <div id="modal-title" style="font-weight:700"></div>
+        <button class="close-btn" id="modal-close" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-grid">
+        <div>
+          <img id="modal-img" src="" alt="">
         </div>
+        <div class="meta">
+          <b id="modal-head"></b>
+          <p id="modal-desc" class="muted"></p>
+          <div style="margin-top:12px">
+            <a id="modal-whatsapp" class="btn primary" href="#" target="_blank">Get Started</a>
+            <a id="modal-email" class="btn ghost" style="margin-left:8px" href="#">Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <p class="credit">created by <span>The Golden Brain Services</span> | &copy; all rights reserved!</p>
-    </section>
+  <!-- SCRIPTS -->
+ <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    /** ───────────────
+     * Responsive Menu Toggle
+     * ─────────────── */
+    const menuToggle = document.getElementById("menu-toggle");
+    const nav = document.querySelector(".main-nav");
+    const icon = menuToggle.querySelector("i");
 
-    <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+    menuToggle.addEventListener("click", () => {
+      const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+      menuToggle.setAttribute("aria-expanded", !expanded);
+      nav.classList.toggle("open");
 
+      // Toggle between bars and times icons
+      icon.classList.toggle("fa-bars");
+      icon.classList.toggle("fa-times");
+    });
 
-    <!--footer section design ends-->
+    // Close nav when any link is clicked
+    document.querySelectorAll(".navlist a").forEach(link => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("open");
+        icon.classList.add("fa-bars");
+        icon.classList.remove("fa-times");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
 
-
-    <!-- Script -->
-
-    <script src="https://smtpjs.com/v3/smtp.js">
-        function sendEmail() {
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "fakhrideen332@gmail.com",
-                Password: "jUstsmile3321*",
-                To: 'fakhrideen332@gmail.com',
-                From: document.getElementById("email").value,
-                Subject: "New Contact Enquary",
-                body: "hello"
-            }).then(
-                message => alert(message));
+    /** ───────────────
+     * Reveal-on-scroll animation
+     * ─────────────── */
+    const observer = new IntersectionObserver(function(entries, obs) {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in-view');
+          obs.unobserve(e.target);
         }
-    </script>
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    /** ───────────────
+     * Work card tilt + modal system
+     * ─────────────── */
+    document.querySelectorAll('.work-card').forEach(card => {
+      card.addEventListener('mousemove', (ev) => {
+        const r = card.getBoundingClientRect();
+        const x = (ev.clientX - r.left) / r.width - 0.5;
+        const y = (ev.clientY - r.top) / r.height - 0.5;
+        card.style.transform = `translateY(-8px) perspective(900px) rotateY(${x * 4}deg) rotateX(${-y * 4}deg)`;
+      });
+      card.addEventListener('mouseleave', () => card.style.transform = '');
+      card.addEventListener('click', () => openProjectModal(card));
+    });
+
+    const modal = document.getElementById('project-modal');
+    const modalClose = document.getElementById('modal-close');
+
+    function openProjectModal(card) {
+      const title = card.getAttribute('data-title') || card.querySelector('.work-meta h4').innerText;
+      const img = card.getAttribute('data-img') || card.querySelector('img').src;
+      const desc = card.getAttribute('data-desc') || card.querySelector('.work-meta p').innerText;
+      document.getElementById('modal-title').textContent = title;
+      document.getElementById('modal-head').textContent = title;
+      document.getElementById('modal-img').src = img;
+      document.getElementById('modal-img').alt = title;
+      document.getElementById('modal-desc').textContent = desc;
+      document.getElementById('modal-whatsapp').href = 'https://wa.me/971552738118?text=' + encodeURIComponent('Hi TGBS, I saw your ' + title + ' service. I would like to get started.');
+      document.getElementById('modal-email').href = 'mailto:hello@tgbs.com?subject=' + encodeURIComponent('Inquiry — ' + title);
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeModal() {
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+    }
+
+    modalClose.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+
+    /** ───────────────
+     * Scroll to top button visibility
+     * ─────────────── */
+    const scrollTop = document.getElementById('scroll-top');
+    window.addEventListener('scroll', () => {
+      if (!scrollTop) return;
+      if (window.scrollY > 300) scrollTop.classList.add('visible');
+      else scrollTop.classList.remove('visible');
+    });
+
+    /** ───────────────
+     * Smooth anchor scroll
+     * ─────────────── */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (ev) => {
+        const href = a.getAttribute('href');
+        if (href.length > 1) {
+          const el = document.querySelector(href);
+          if (el) { ev.preventDefault(); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        }
+      });
+    });
+
+    /** ───────────────
+     * Contact form mailto handler
+     * ─────────────── */
+    const form = document.getElementById('contact-form');
+    if (form) {
+      form.addEventListener('submit', function (ev) {
+        ev.preventDefault();
+        const name = encodeURIComponent(document.getElementById('name').value.trim());
+        const email = encodeURIComponent(document.getElementById('email').value.trim());
+        const msg = encodeURIComponent(document.getElementById('message').value.trim());
+        const subject = encodeURIComponent('New enquiry from portfolio — ' + name);
+        const body = encodeURIComponent(`Name: ${decodeURIComponent(name)}\nEmail: ${decodeURIComponent(email)}\n\nMessage:\n${decodeURIComponent(msg)}`);
+        window.location.href = `mailto:hello@tgbs.com?subject=${subject}&body=${body}`;
+      });
+    }
+
+    /** ───────────────
+     * Accessibility: ESC closes modal
+     * ─────────────── */
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+  });
 
 
+  // Reveal Works Section
+document.addEventListener("DOMContentLoaded", function () {
+  const revealBtn = document.getElementById("revealWorksBtn");
+  const worksSection = document.getElementById("worksSection");
+
+  if (revealBtn && worksSection) {
+    revealBtn.addEventListener("click", () => {
+      worksSection.classList.toggle("show");
+      revealBtn.querySelector(".arrow-down").style.transform =
+        worksSection.classList.contains("show")
+          ? "rotate(135deg)"
+          : "rotate(-45deg)";
+    });
+  }
+});
+
+window.addEventListener("scroll", () => {
+  const btn = document.getElementById("revealWorksBtn");
+  if (!btn) return;
+
+  if (window.scrollY > 150) {
+    btn.classList.add("fade-out");
+  } else {
+    btn.classList.remove("fade-out");
+  }
+});
+
+</script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- custom js file link -->
-
-    <script src="js/script.js"></script>
-
+  <!-- FontAwesome fallback (load from CDN only if local is not present) -->
+  <script>
+    (function(){ if(!window.FontAwesomeLoaded && !document.querySelector('link[href*="font-6"]')){ var l=document.createElement('link'); l.rel='stylesheet'; l.href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'; document.head.appendChild(l);} })();
+  </script>
 </body>
-
 </html>
