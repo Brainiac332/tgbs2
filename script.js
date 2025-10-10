@@ -174,7 +174,7 @@ function showToast(msg){
           ? 'Tap here to open the menu and explore our golden services.'
           : 'Explore our golden services, projects, and more using this bar.'
       },
-      { sel: '.floating', title: 'Stay connected', text: "Check Brainy's portfolio and contact us instantly — WhatsApp, Instagram, LinkedIn." },
+      { sel: '.floating', title: 'Stay connected', text: "Find Brainy's portfolio and instant contact (WhatsApp, Instagram, LinkedIn) here." },
       { sel: '#leadForm', title: 'Strategy Call', text: 'Ready to shine? Request your free golden strategy call here.', final: true }
     ];
   }
@@ -475,5 +475,6 @@ setInterval(createSpark, 300);
   window.addEventListener('mouseup',   onEnd);
 })();
 /* ================= /GOLDEN GUIDED TOUR ================= */
+
 
 
