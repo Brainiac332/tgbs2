@@ -24,6 +24,12 @@ body{
   background: linear-gradient(180deg, var(--bg), var(--bg2));
   overflow-x:hidden;
 }
+.logo img {
+  width: 200px;
+  height: 40px;
+  object-fit: cover;
+}
+
 
 a{ color:inherit; text-decoration:none; }
 .container{ width:min(var(--max), 92%); margin:0 auto; }
@@ -771,5 +777,6 @@ select:focus{
   margin-top: 0 !important;
   padding-right: 90px !important;
 }
+
 
 
