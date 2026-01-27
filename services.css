@@ -618,8 +618,8 @@ select:focus{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff; /* TGBS black */
-  color: #000; /* icons gold */
+  background: #000; /* TGBS black */
+  color: #fff; /* icons gold */
   font-size: 22px;
   box-shadow: 0 6px 14px rgba(0,0,0,0.3);
   transition: transform 0.3s, background 0.3s, color 0.3s;
@@ -771,4 +771,5 @@ select:focus{
   margin-top: 0 !important;
   padding-right: 90px !important;
 }
+
 
