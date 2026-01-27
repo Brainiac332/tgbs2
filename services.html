@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TGBS — IT & Creative Services</title>
+  <meta name="description" content="TGBS provides premium IT solutions for SMBs and high-impact creative services: branding, websites, social media, and video ads."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+  <link rel="stylesheet" href="services.css" />
+</head>
+
+<body>
+  <!-- Background -->
+  <div class="bg">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div class="noise"></div>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">
+        <span class="brand-dot"></span>
+        <span class="brand-text">The Golden Brain Services</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#it">IT Services</a>
+        <a href="#creative">Creative Services</a>
+        <a href="#pricing">IT Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="#creative">View Creative</a>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/971552738118">Get Started</a>
+        <button class="nav-burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="#it">IT Services</a>
+      <a href="#creative">Creative Services</a>
+      <a href="#pricing">IT Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-primary mobile-cta" target="_blank" rel="noopener" href="https://wa.me/971552738118">WhatsApp Now</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <div class="pill">IT + Creative Solutions for SMBs & Brands</div>
+        <h1>Predictable Delivery. <span class="grad">Premium Results.</span></h1>
+        <p class="lead">
+          Secure your business with reliable IT — and grow with premium branding, websites, and content.
+          Built for fast decisions at events and beyond.
+        </p>
+
+        <div class="hero-ctas">
+          <a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/971552738118">Talk on WhatsApp</a>
+          <a class="btn btn-ghost" href="#it">Explore IT</a>
+          <a class="btn btn-ghost" href="#creative">Explore Creative</a>
+        </div>
+
+        <div class="hero-mini">
+          <div class="mini-card">
+            <div class="mini-title">Fast Turnaround</div>
+            <div class="mini-text">Clear timelines & deliverables</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-title">Security First</div>
+            <div class="mini-text">Layered defenses & backups</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-title">Premium Design</div>
+            <div class="mini-text">Brand-ready visuals & systems</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="glass-panel">
+          <div class="panel-title">Quick Quote</div>
+          <p class="panel-text">Pick a category and tell us what you need.</p>
+
+          <form id="quoteForm">
+            <label>
+              Category
+              <select id="category" required>
+                <option value="" disabled selected>Select</option>
+                <option value="IT Services">IT Services</option>
+                <option value="Creative Services">Creative Services</option>
+              </select>
+            </label>
+
+            <label>
+              Company Size (for IT)
+              <select id="companySize">
+                <option value="" selected>Optional</option>
+                <option value="1–15 employees">1–15 employees</option>
+                <option value="16–50 employees">16–50 employees</option>
+                <option value="50+ employees">50+ employees</option>
+              </select>
+            </label>
+
+            <label>
+              What do you need?
+              <select id="need" required>
+                <option value="" disabled selected>Select</option>
+                <!-- Filled by JS based on category -->
+              </select>
+            </label>
+
+            <button type="submit" class="btn btn-primary full btn-shine">Send on WhatsApp</button>
+
+            <div class="panel-foot">
+              Or call: <a href="tel:+971552738118">+971 55 273 8118</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IT SERVICES -->
+  <section id="it" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">IT Services</div>
+        <h2>Business Needs vs. <span class="grad">Our Solutions</span></h2>
+        <p class="muted">
+          Built for SMBs that want secure operations, reliable performance, and scalable systems.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="feature-card">
+          <h3>Email & Communication</h3>
+          <p>Microsoft 365 + Email deployment, identity management, MFA/2FA, Teams collaboration.</p>
+          <span class="tag">M365 • Security • Teams</span>
+        </article>
+
+        <article class="feature-card">
+          <h3>Computer Support & Hardware</h3>
+          <p>L1–L3 support + new/refurbished devices with warranty for stable productivity.</p>
+          <span class="tag">Support • Devices • Warranty</span>
+        </article>
+
+        <article class="feature-card">
+          <h3>Security & Compliance</h3>
+          <p>FortiGate firewalls (IPS/IDS), endpoint protection (Threatdown/Wazuh), security audits.</p>
+          <span class="tag">Firewall • Endpoint • Audits</span>
+        </article>
+
+        <article class="feature-card">
+          <h3>Backup & Disaster Recovery</h3>
+          <p>Automated daily backups, immutable backup options (Veeam), offsite storage, tested DR plans.</p>
+          <span class="tag">Daily Backup • DR</span>
+        </article>
+
+        <article class="feature-card">
+          <h3>Business Software & Systems</h3>
+          <p>Accounting, ERP, CRM, HR, warehousing & logistics platforms tailored to your industry.</p>
+          <span class="tag">ERP • CRM • HR</span>
+        </article>
+
+        <article class="feature-card">
+          <h3>Remote Access</h3>
+          <p>Zero-trust remote access via Cloudflare Tunnels + modern IPsec VPN.</p>
+          <span class="tag">Zero-trust • VPN</span>
+        </article>
+
+        <article class="feature-card">
+          <h3>Effective AI Adoption</h3>
+          <p>AI integration using custom LLM workflows and automation scripts to reduce manual tasks.</p>
+          <span class="tag">Automation • LLM</span>
+        </article>
+
+        <article class="feature-card">
+          <h3>Hardware Procurement</h3>
+          <p>Tier-1 new devices + business-grade refurbished laptops (Dell/HP/Lenovo) at 40–60% less.</p>
+          <span class="tag">Procurement • Tier-1</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREATIVE SERVICES (DYNAMIC UI + PACKAGES) -->
+  <section id="creative" class="section section-creative">
+    <div class="container">
+      <div class="section-head center">
+        <div class="kicker">Creative Services</div>
+        <h2>Premium Creative Packages for <span class="grad">Brands & Businesses</span></h2>
+        <p class="muted">Choose a service to view Basic / Standard / Premium packages.</p>
+      </div>
+
+      <div class="service-switch">
+        <div class="switch-row" id="serviceChips" aria-label="Service selector"></div>
+        <div class="switch-hint muted small">Tip: Use this at the event as your “instant price menu”.</div>
+      </div>
+
+      <div class="pricing-grid creative-grid" id="creativePackages" aria-live="polite"></div>
+
+      <div class="addons" id="addonsBlock" hidden>
+        <div class="addons-inner">
+          <div class="addons-title">Add-ons</div>
+          <div class="addons-list" id="addonsList"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IT PRICING -->
+  <section id="pricing" class="section section-pricing">
+    <div class="container">
+      <div class="section-head center">
+        <div class="kicker">Pricing Plan</div>
+        <h2>Predictable IT Pricing. <span class="grad">No Surprises.</span></h2>
+        <p class="muted">Monthly management tiers designed for SMBs in the UAE market.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card hover-glow">
+          <div class="price-top">
+            <h3>Tier 1</h3>
+            <p class="muted small">Small Business (1–15 Employees)</p>
+          </div>
+
+          <div class="price">
+            <div class="amount">AED 600+</div>
+            <div class="per">/ month</div>
+          </div>
+
+          <div class="includes">Includes:</div>
+          <ul class="list">
+            <li>M365 management</li>
+            <li>Basic security</li>
+            <li>Remote support</li>
+            <li>Weekly backups</li>
+          </ul>
+
+          <a class="btn btn-ghost full btn-shine" href="#contact">Request Proposal</a>
+        </article>
+
+        <article class="price-card popular hover-glow">
+          <div class="badge">MOST POPULAR</div>
+          <div class="price-top">
+            <h3>Tier 2</h3>
+            <p class="muted small">Growing Enterprise (16–50 Employees)</p>
+          </div>
+
+          <div class="price">
+            <div class="amount">AED 1,800+</div>
+            <div class="per">/ month</div>
+          </div>
+
+          <div class="includes">Includes:</div>
+          <ul class="list">
+            <li>Everything in Tier 1</li>
+            <li>Firewall management</li>
+            <li>On-site support</li>
+            <li>ERP/CRM administration</li>
+            <li>AI automation</li>
+            <li>Daily backups</li>
+          </ul>
+
+          <a class="btn btn-primary full btn-shine" target="_blank" rel="noopener" href="https://wa.me/971552738118">Purchase / Start</a>
+        </article>
+
+        <article class="price-card hover-glow">
+          <div class="price-top">
+            <h3>Tier 3</h3>
+            <p class="muted small">Professional Managed (50+ Employees)</p>
+          </div>
+
+          <div class="price">
+            <div class="amount">Custom</div>
+            <div class="per">Quote</div>
+          </div>
+
+          <div class="includes">Includes:</div>
+          <ul class="list">
+            <li>Everything in Tier 2</li>
+            <li>24/7 monitoring</li>
+            <li>Dedicated account manager</li>
+            <li>Warehouse/logistics integrations</li>
+            <li>Advanced zero-trust architecture</li>
+          </ul>
+
+          <a class="btn btn-ghost full btn-shine" href="#contact">Get Custom Quote</a>
+        </article>
+      </div>
+
+      <div class="logo-strip">
+        <div class="logo-strip-inner">
+          <p class="strip-title">Trusted by growing teams & entrepreneurs</p>
+          <div class="logos">
+            <span class="logo-pill">Startups</span>
+            <span class="logo-pill">SMBs</span>
+            <span class="logo-pill">Agencies</span>
+            <span class="logo-pill">Retail</span>
+            <span class="logo-pill">Logistics</span>
+            <span class="logo-pill">Professional Services</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section section-faq">
+    <div class="container faq-grid">
+      <div class="faq-left">
+        <div class="kicker">Common Questions</div>
+        <h2>Most Popular <span class="grad">Questions</span></h2>
+        <p class="muted">Quick answers for decision-makers. Want a fast quote? Tap WhatsApp.</p>
+        <a class="btn btn-primary btn-shine" target="_blank" rel="noopener" href="https://wa.me/971552738118">WhatsApp Us</a>
+      </div>
+
+      <div class="faq-right">
+        <div class="accordion" data-accordion>
+          <button class="acc-item" aria-expanded="true">
+            <span>Do you offer on-site support in the UAE?</span>
+            <span class="chev">▾</span>
+          </button>
+          <div class="acc-panel open">Yes. We provide remote support and on-site support depending on your tier and needs.</div>
+
+          <button class="acc-item" aria-expanded="false">
+            <span>Can you handle both IT and brand/design work?</span>
+            <span class="chev">▾</span>
+          </button>
+          <div class="acc-panel">Yes — we cover IT systems plus creative delivery (branding, websites, content) for a full business setup.</div>
+
+          <button class="acc-item" aria-expanded="false">
+            <span>Do you setup backups and disaster recovery?</span>
+            <span class="chev">▾</span>
+          </button>
+          <div class="acc-panel">Yes — automated backups, offsite storage, and tested recovery plans.</div>
+
+          <button class="acc-item" aria-expanded="false">
+            <span>Can you migrate us to Microsoft 365?</span>
+            <span class="chev">▾</span>
+          </button>
+          <div class="acc-panel">Absolutely — we deploy Microsoft 365, configure secure identity access, email, and Teams.</div>
+
+          <button class="acc-item" aria-expanded="false">
+            <span>How fast can you deliver creative packages?</span>
+            <span class="chev">▾</span>
+          </button>
+          <div class="acc-panel">Depends on the package — many deliverables can be done in 24–48 hours for basic tiers.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-contact">
+    <div class="container contact-inner">
+      <div class="contact-card hover-glow">
+        <h2>Ready to start?</h2>
+        <p class="muted">Send your needs now — we’ll respond quickly.</p>
+
+        <div class="contact-actions">
+          <a class="btn btn-primary btn-shine" target="_blank" rel="noopener" href="https://wa.me/971552738118">Chat on WhatsApp</a>
+          <a class="btn btn-ghost btn-shine" href="tel:+971552738118">Call +971 55 273 8118</a>
+        </div>
+
+        <div class="contact-note">Website: <span class="mono">www.thegoldenbrainservices.com</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="foot-col">
+        <div class="brand foot-brand">
+          <span class="brand-dot"></span>
+          <span class="brand-text">The Golden Brain Services</span>
+        </div>
+        <p class="muted small">IT stability + premium creative delivery for business growth.</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook">Fb</a>
+          <a href="#" aria-label="Instagram">Ig</a>
+          <a href="#" aria-label="LinkedIn">In</a>
+
+          
+        </div>
+      </div>
+
+      <div class="foot-col">
+        <h4>IT Services</h4>
+        <a href="#it">Microsoft 365</a>
+        <a href="#it">Cybersecurity</a>
+        <a href="#it">Backup & DR</a>
+        <a href="#it">Remote Access</a>
+        <a href="#it">AI Automation</a>
+      </div>
+
+      <div class="foot-col">
+        <h4>Creative</h4>
+        <a href="#creative">Branding & Logos</a>
+        <a href="#creative">Websites</a>
+        <a href="#creative">Social Media</a>
+        <a href="#creative">Video Ads</a>
+        <a href="#creative">Templates</a>
+      </div>
+
+      <div class="foot-col">
+        <h4>Support</h4>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a target="_blank" rel="noopener" href="https://wa.me/971552738118">WhatsApp</a>
+        <a href="tel:+971552738118">Call</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span class="muted small">© <span id="year"></span> The Golden Brain Services. All rights reserved.</span>
+      <span class="muted small">Powered by TGBS</span>
+    </div>
+  </footer>
+
+  <!-- Floating Social Buttons -->
+<div class="floating">
+    <!-- WhatsApp -->
+  <a href="https://wa.me/971552738118?text=Hi%20TGBS%2C%20I%27d%20love%20a%20free%20strategy%20call" 
+     class="float-btn" 
+     title="Chat on WhatsApp" 
+     aria-label="Chat on WhatsApp" target="_blank"
+     data-tooltip="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://instagram.com/tgbs25" 
+     class="float-btn" 
+     title="Follow us on Instagram" 
+     aria-label="Instagram" target="_blank"
+     data-tooltip="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://linkedin.com/company/the-golden-brain-services" 
+     class="float-btn" 
+     title="Connect on LinkedIn" 
+     aria-label="LinkedIn" target="_blank"
+     data-tooltip="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+</div>
+
+  <script src="services.js"></script>
+</body>
+</html>
