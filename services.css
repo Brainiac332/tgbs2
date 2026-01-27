@@ -628,8 +628,8 @@ select:focus{
 }
 
 .float-btn:hover {
-  background: var(--gold);
-  color: #111;
+  background: #000;
+  color: #fff;
   transform: scale(1.12);
 }
 
@@ -771,3 +771,4 @@ select:focus{
   margin-top: 0 !important;
   padding-right: 90px !important;
 }
+
